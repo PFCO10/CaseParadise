@@ -1,0 +1,154 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #1b1b2f;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+/* HEADER */
+header {
+  background-color: #111127;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ff6f61;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #ff6f61;
+}
+
+.user-info {
+  font-size: 1rem;
+}
+
+.user-info button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #ff6f61;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.user-info button:hover {
+  background-color: #ff4c3b;
+}
+
+/* MAIN */
+main {
+  padding: 20px;
+}
+
+/* DROP SECTION */
+.drop-section {
+  background-color: #22224a;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.drop-section h2 {
+  margin-bottom: 15px;
+  color: #ffcc00;
+}
+
+.drop-box button {
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  background-color: #ff6f61;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  transition: transform 0.2s;
+}
+
+.drop-box button:hover {
+  transform: scale(1.05);
+  background-color: #ff4c3b;
+}
+
+.drop-result {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  min-height: 30px;
+}
+
+/* INVENTORY SECTION */
+.inventory-section {
+  background-color: #22224a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.inventory-section h2 {
+  margin-bottom: 15px;
+  color: #00ccff;
+}
+
+.inventory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+/* ITEM CARD */
+.item-card {
+  background-color: #33335a;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.item-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+
+.item-card:hover {
+  transform: scale(1.05);
+}
+
+/* RAREZA */
+.rarity-Común {
+  border: 2px solid #bbbbbb;
+}
+
+.rarity-Raro {
+  border: 2px solid #00ffcc;
+}
+
+.rarity-Épico {
+  border: 2px solid #ff00ff;
+}
+
+.rarity-Legendario {
+  border: 2px solid #ffcc00;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #111127;
+  border-top: 2px solid #ff6f61;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #aaaaaa;
+}
