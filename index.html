@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EmpireDrop Virtual</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>EmpireDrop Virtual</h1>
+    <div class="user-info">
+      <span id="user-name">Invitado</span> |
+      Moneda: <span id="user-balance">1000</span>
+      <button id="login-btn">Login</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="drop-section">
+      <h2>Abrir Caja</h2>
+      <div class="drop-box">
+        <button id="open-box-btn">Abrir Caja (100 monedas)</button>
+      </div>
+      <div id="drop-result" class="drop-result"></div>
+    </section>
+
+    <section class="inventory-section">
+      <h2>Inventario Virtual</h2>
+      <div id="inventory" class="inventory-grid">
+        <!-- Items aparecerán aquí -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 EmpireDrop Virtual. Solo coleccionable digital.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
