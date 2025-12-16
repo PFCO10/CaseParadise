@@ -2,41 +2,67 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EmpireDrop Virtual</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>EmpireDrop Virtual</h1>
-    <div class="user-info">
-      <span id="user-name">Invitado</span> |
-      Moneda: <span id="user-balance">1000</span>
-      <button id="login-btn">Login</button>
+
+<header>
+  <h1>EmpireDrop Virtual</h1>
+  <div class="user-panel">
+    💰 <span id="balance">1000</span> monedas
+  </div>
+</header>
+
+<main>
+
+  <!-- CAJAS -->
+  <section class="boxes">
+    <h2>Cajas</h2>
+
+    <div class="box">
+      <h3>Caja Básica</h3>
+      <p>Coste: 100 monedas</p>
+      <button onclick="openBox('basic')">Abrir</button>
     </div>
-  </header>
 
-  <main>
-    <section class="drop-section">
-      <h2>Abrir Caja</h2>
-      <div class="drop-box">
-        <button id="open-box-btn">Abrir Caja (100 monedas)</button>
-      </div>
-      <div id="drop-result" class="drop-result"></div>
-    </section>
+    <div class="box">
+      <h3>Caja Premium</h3>
+      <p>Coste: 300 monedas</p>
+      <button onclick="openBox('premium')">Abrir</button>
+    </div>
 
-    <section class="inventory-section">
-      <h2>Inventario Virtual</h2>
-      <div id="inventory" class="inventory-grid">
-        <!-- Items aparecerán aquí -->
-      </div>
-    </section>
-  </main>
+    <div class="box">
+      <h3>Caja Legendaria</h3>
+      <p>Coste: 700 monedas</p>
+      <button onclick="openBox('legendary')">Abrir</button>
+    </div>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 EmpireDrop Virtual. Solo coleccionable digital.</p>
-  </footer>
+  <!-- RESULTADO -->
+  <section class="result">
+    <h2>Resultado</h2>
+    <div id="resultBox">Abre una caja</div>
+  </section>
 
-  <script src="script.js"></script>
+  <!-- INVENTARIO -->
+  <section class="inventory">
+    <h2>Inventario</h2>
+    <div id="inventory"></div>
+  </section>
+
+  <!-- HISTORIAL -->
+  <section class="history">
+    <h2>Historial</h2>
+    <ul id="history"></ul>
+  </section>
+
+</main>
+
+<footer>
+  <p>⚠️ Todos los objetos son virtuales y no canjeables en la vida real</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
